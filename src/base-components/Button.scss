@@ -1,0 +1,73 @@
+.ui-button {
+  @apply px-5 rounded flex justify-center items-center;
+  height: 40px;
+}
+
+.ui-button:hover {
+  opacity: 0.8;
+}
+
+.ui-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.ui-button.primary {
+  @apply bg-primary-color text-white;
+}
+
+.ui-button.secondary {
+  @apply bg-white text-black border border-light-gray-color;
+}
+
+.ui-button.outlined {
+  @apply border border-primary-color bg-white text-black;
+}
+
+.ui-button.danger {
+  @apply border border-red-color bg-white text-red-color;
+}
+
+.ui-button.danger-text {
+  @apply text-red-color;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.ui-button.outlined:hover {
+  @apply bg-primary-color text-white;
+}
+
+.ui-button.default {
+  @apply text-black px-0;
+}
+
+.ui-button.none {
+  cursor: pointer;
+}
+
+.ui-button.none:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.ui-button.text {
+  background: none;
+  border: none;
+  color: #007bff;
+  padding: 4px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.ui-button.success {
+  @apply text-white;
+  background-color: var(--success-color);
+}
+
+.ui-button.success:hover {
+  @apply text-white;
+  background-color: var(--success-color);
+  opacity: 0.9;
+}

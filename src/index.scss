@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #141b4d;
+  --light-primary-color: #25328e;
+  --secondary-color: #ff5c39;
+  --gray-border-color: #d2d2d254;
+  --background-color: #f0f0f0;
+  --success-color: #11b456;
+  --warning-color: #ee9800;
+  --light-purple-color: #ebedfa;
+  --primary-purple-color: #2f40b6;
+  --red-color: #e32929;
+  --info-color: #0e89e4;
+  --black-color: #000000;
+  --gray-color: #8c8c8c;
+  --light-gray-color: #d2d2d2;
+  --light-shadow-color: #ff5c391a;
+  --toastify-color-error: var(--red-color);
+  --toastify-color-success: var(--success-color);
+  --backwhite-color: #ffffff;
+  --light-red: #ffeae5;
+  --error-light-color: #ffd8d8;
+  --info-light-color: #b0d1eb;
+  --input-disable-color: #e3e3e3;
+  --text-disable-color: #8c8c8c;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.icon {
+  cursor: pointer;
+  width: 20px;
+}
+
+.doc-icon {
+  min-width: 18px;
+  min-height: 18px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  height: 100%;
+  overflow-y: auto;
+}
+
+.ui-divider {
+  border-bottom: 1px solid var(--gray-color);
+}
+
+.ui-divider-light {
+  border-bottom: 1px solid #8c8c8c66;
+}
+
+html,
+body,
+.app,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.heading {
+  @apply text-3xl font-bold text-[var(--primary-color)] m-0;
+}
+
+.subheading {
+  @apply text-2xl font-extralight font-mono text-gray-400 pb-3 mt-5;
+}
+
+.grid-custom-2 {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-4;
+}
+
+.title {
+  @apply text-xl font-bold text-[var(--primary-color)] m-0;
+}
+
+.description {
+  @apply text-base text-[var(--primary-color)] m-0;
+}
+
+.form-heading {
+  @apply text-xl text-gray-400;
+}
+
+.hide-scrollbar {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0 !important; /* Chrome, Safari, Opera */
+}

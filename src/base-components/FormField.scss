@@ -1,0 +1,72 @@
+.PhoneInputInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.ui-base-input,
+.ui-base-mobile-input {
+  @apply px-3 bg-white w-full rounded text-sm border-primary-color focus:outline-none focus:border hover:border;
+  height: 40px;
+}
+
+.ui-checkbox {
+  accent-color: var(--primary-color);
+  transform: scale(1.4);
+}
+
+.ui-checkbox:disabled {
+  cursor: not-allowed;
+}
+.ui-radioButton-color {
+  accent-color: var(--primary-color);
+}
+.ui-base-mobile-input-read-only {
+  background-color: var(--input-disable-color);
+  color: var(--text-disable-color);
+  border: #d2d2d2;
+}
+
+.ui-base-input:read-only {
+  background-color: var(--input-disable-color);
+  color: var(--text-disable-color);
+  // cursor: not-allowed;
+}
+
+.ui-base-input:read-only:hover {
+  border: none;
+}
+
+/* Change autofill background color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  // -webkit-text-fill-color: black !important;
+}
+
+/* For Firefox */
+input:-moz-autofill,
+input:-moz-autofill:hover,
+input:-moz-autofill:focus {
+  background-color: white !important;
+  // color: black !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.bg-input-disable-color:disabled {
+  background-color: var(--input-disable-color);
+}
